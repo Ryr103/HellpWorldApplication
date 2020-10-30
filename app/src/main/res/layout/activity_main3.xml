@@ -50,7 +50,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="总体报告: A"
+                android:id="@+id/report"
                 android:textSize="30dp"
                 android:textColor="#3299CC"
                 android:background="@color/white"
@@ -62,7 +62,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:text="成绩良好，有偏科现象"
+                android:id="@+id/report_body"
                 android:textSize="20dp"
                 android:textColor="@color/black"
                 android:gravity="center"/>
@@ -84,7 +84,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="优势科目:***"
+                android:id="@+id/advantage_subject"
                 android:textSize="25dp"
                 android:textColor="#3299CC"
                 android:layout_weight="1"
@@ -92,7 +92,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:text="***科目等级为*,成绩优秀，希望继续保持。"
+                android:text="成绩优秀，希望继续保持。"
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="10dp"
@@ -100,7 +100,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="薄弱科目:***"
+                android:id="@+id/Disadvantage_subject"
                 android:textSize="25dp"
                 android:textColor="#3299CC"
                 android:layout_weight="1"
@@ -108,7 +108,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:text="***科目等级为*,成绩较为落后，希望能多加重视，注重基础。"
+                android:text="成绩较为落后，希望能多加重视，注重基础。"
                 android:textSize="15dp"
                 android:textColor="@color/black"
                 android:layout_gravity="bottom"

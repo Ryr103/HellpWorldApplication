@@ -48,13 +48,15 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:hint="请输入学科分数:"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:numeric="decimal"/>
         <EditText
-            android:id="@+id/gradePoint1"
+            android:id="@+id/credit1"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:hint="请输入学科绩点:"
-            android:layout_weight="1"/>
+            android:hint="请输入学科学分:"
+            android:layout_weight="1"
+            android:numeric="decimal"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -81,13 +83,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:hint="请输入学科分数:"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:numeric="decimal"/>
             <EditText
-                android:id="@+id/gradePoint2"
+                android:id="@+id/credit2"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:hint="请输入学科绩点:"
-                android:layout_weight="1"/>
+                android:hint="请输入学科学分:"
+                android:layout_weight="1"
+                android:numeric="decimal"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -112,13 +116,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:hint="请输入学科分数:"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:numeric="decimal"/>
             <EditText
-                android:id="@+id/gradePoint3"
+                android:id="@+id/credit3"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:hint="请输入学科绩点:"
-                android:layout_weight="1"/>
+                android:hint="请输入学科学分:"
+                android:layout_weight="1"
+                android:numeric="decimal"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -143,13 +149,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:hint="请输入学科分数:"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:numeric="decimal"/>
             <EditText
-                android:id="@+id/gradePoint4"
+                android:id="@+id/credit4"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:hint="请输入学科绩点:"
-                android:layout_weight="1"/>
+                android:hint="请输入学科学分:"
+                android:layout_weight="1"
+                android:numeric="decimal"/>
         </LinearLayout>
     </LinearLayout>
 <LinearLayout

@@ -19,6 +19,12 @@ public class MainActivityInputYourScore extends AppCompatActivity {
     private EditText score2;
     private EditText score3;
     private EditText score4;
+    private EditText credit1;
+    private EditText credit2;
+    private EditText credit3;
+    private EditText credit4;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +40,12 @@ public class MainActivityInputYourScore extends AppCompatActivity {
         score2=findViewById(R.id.score2);
         score3=findViewById(R.id.score3);
         score4=findViewById(R.id.score4);
+        credit1=findViewById(R.id.credit1);
+        credit2=findViewById(R.id.credit2);
+        credit3=findViewById(R.id.credit3);
+        credit4=findViewById(R.id.credit4);
+
+
 
 
 
@@ -50,6 +62,10 @@ public class MainActivityInputYourScore extends AppCompatActivity {
                 intent.putExtra("score2",score2.getText().toString().trim());
                 intent.putExtra("score3",score3.getText().toString().trim());
                 intent.putExtra("score4",score4.getText().toString().trim());
+                intent.putExtra("credit1",credit1.getText().toString().trim());
+                intent.putExtra("credit2",credit2.getText().toString().trim());
+                intent.putExtra("credit3",credit3.getText().toString().trim());
+                intent.putExtra("credit4",credit4.getText().toString().trim());
                 startActivity(intent);
                 finish();
 
