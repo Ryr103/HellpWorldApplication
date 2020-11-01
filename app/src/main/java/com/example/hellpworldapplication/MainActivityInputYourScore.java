@@ -65,13 +65,13 @@ public class MainActivityInputYourScore extends AppCompatActivity {
                     String Credit2=credit2.getText().toString();
                     String Credit3=credit3.getText().toString();
                     String Credit4=credit4.getText().toString();
-                    String Subjectname1=subjectName1.getText().toString();
-                    String Subjectname2=subjectName2.getText().toString();
-                    String Subjectname3=subjectName3.getText().toString();
-                    String Subjectname4=subjectName4.getText().toString();
+                    String Subjectname1=subjectName1.getText().toString().trim();
+                    String Subjectname2=subjectName2.getText().toString().trim();
+                    String Subjectname3=subjectName3.getText().toString().trim();
+                    String Subjectname4=subjectName4.getText().toString().trim();
                        Intent intent;
                      if(Score1.length()==0 || Score2.length()==0 || Score3.length()==0 || Score4.length()==0 || Credit1.length()==0 ||Credit2.length()==0 || Credit3.length()==0 || Credit4.length()==0 || Subjectname1.length()==0 || Subjectname2.length()==0 || Subjectname3.length()==0 || Subjectname4.length()==0)
-                     {   Toast.makeText(MainActivityInputYourScore.this,Score1,Toast.LENGTH_LONG).show();
+                     {   Toast.makeText(MainActivityInputYourScore.this,"请输入有效数据(不要输入空格或空输入！)",Toast.LENGTH_LONG).show();
                      return;
                      }
                     else
