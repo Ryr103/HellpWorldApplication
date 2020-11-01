@@ -90,6 +90,8 @@ public class  MainActivity extends AppCompatActivity {
         String credit4=intent.getStringExtra("credit4");
 
         Float totalcredit=Float.valueOf(credit1)+Float.valueOf(credit2)+Float.valueOf(credit3)+Float.valueOf(credit4);
+
+
         total_credit.setText(totalcredit.toString());
         Float averGrade=((Float.valueOf(score1)*Float.valueOf(credit1)+Float.valueOf(score2)*Float.valueOf(credit2)+Float.valueOf(score3)*Float.valueOf(credit3)+Float.valueOf(score4)*Float.valueOf(credit4))/totalcredit);
         aver_grade.setText(averGrade.toString());
@@ -334,6 +336,9 @@ public class  MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+
                 Intent intent = new Intent(MainActivity.this, MainActivityInputYourScore.class);
                 intent.putExtra("subjectName1", subjectName1);
                 intent.putExtra("subjectName2", subjectName2);

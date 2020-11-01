@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import javax.xml.validation.Validator;
 
 public class MainActivityInputYourScore extends AppCompatActivity {
     private Button button;
@@ -23,6 +26,7 @@ public class MainActivityInputYourScore extends AppCompatActivity {
     private EditText credit2;
     private EditText credit3;
     private EditText credit4;
+    private Toast toast;
 
 
     @Override
@@ -49,28 +53,50 @@ public class MainActivityInputYourScore extends AppCompatActivity {
 
 
 
-        ImageButton button =(ImageButton)findViewById(R.id.goToAssessment);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivityInputYourScore.this, MainActivity.class);
-                intent.putExtra("subjectName1", subjectName1.getText().toString().trim());
-                intent.putExtra("subjectName2", subjectName2.getText().toString().trim());
-                intent.putExtra("subjectName3", subjectName3.getText().toString().trim());
-                intent.putExtra("subjectName4", subjectName4.getText().toString().trim());
-                intent.putExtra("score1",score1.getText().toString().trim());
-                intent.putExtra("score2",score2.getText().toString().trim());
-                intent.putExtra("score3",score3.getText().toString().trim());
-                intent.putExtra("score4",score4.getText().toString().trim());
-                intent.putExtra("credit1",credit1.getText().toString().trim());
-                intent.putExtra("credit2",credit2.getText().toString().trim());
-                intent.putExtra("credit3",credit3.getText().toString().trim());
-                intent.putExtra("credit4",credit4.getText().toString().trim());
-                startActivity(intent);
-                finish();
+            ImageButton button = (ImageButton) findViewById(R.id.goToAssessment);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String Score1=score1.getText().toString();
+                    String Score2=score2.getText().toString();
+                    String Score3=score3.getText().toString();
+                    String Score4=score4.getText().toString();
+                    String Credit1=credit1.getText().toString();
+                    String Credit2=credit2.getText().toString();
+                    String Credit3=credit3.getText().toString();
+                    String Credit4=credit4.getText().toString();
+                    String Subjectname1=subjectName1.getText().toString();
+                    String Subjectname2=subjectName2.getText().toString();
+                    String Subjectname3=subjectName3.getText().toString();
+                    String Subjectname4=subjectName4.getText().toString();
+                       Intent intent;
+                     if(Score1.length()==0 || Score2.length()==0 || Score3.length()==0 || Score4.length()==0 || Credit1.length()==0 ||Credit2.length()==0 || Credit3.length()==0 || Credit4.length()==0 || Subjectname1.length()==0 || Subjectname2.length()==0 || Subjectname3.length()==0 || Subjectname4.length()==0)
+                     {   Toast.makeText(MainActivityInputYourScore.this,Score1,Toast.LENGTH_LONG).show();
+                     return;
+                     }
+                    else
+                    {intent = new Intent(MainActivityInputYourScore.this, MainActivity.class);
+                        intent.putExtra("subjectName1", subjectName1.getText().toString().trim());
+                        intent.putExtra("subjectName2", subjectName2.getText().toString().trim());
+                        intent.putExtra("subjectName3", subjectName3.getText().toString().trim());
+                        intent.putExtra("subjectName4", subjectName4.getText().toString().trim());
+                        intent.putExtra("score1", score1.getText().toString().trim());
+                        intent.putExtra("score2", score2.getText().toString().trim());
+                        intent.putExtra("score3", score3.getText().toString().trim());
+                        intent.putExtra("score4", score4.getText().toString().trim());
+                        intent.putExtra("credit1", credit1.getText().toString().trim());
+                        intent.putExtra("credit2", credit2.getText().toString().trim());
+                        intent.putExtra("credit3", credit3.getText().toString().trim());
+                        intent.putExtra("credit4", credit4.getText().toString().trim());
+                        startActivity(intent);
+                        finish();}
 
 
-            }
-        });
+
+                }
+
+            });
+
+
     }
 }

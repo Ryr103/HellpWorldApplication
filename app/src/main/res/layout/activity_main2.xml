@@ -49,14 +49,16 @@
             android:layout_height="45dp"
             android:hint="请输入学科分数:"
             android:layout_weight="1"
-            android:numeric="decimal"/>
+            android:numeric="decimal"
+            android:maxLength="4"/>
         <EditText
             android:id="@+id/credit1"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:hint="请输入学科学分:"
             android:layout_weight="1"
-            android:numeric="decimal"/>
+            android:numeric="decimal"
+            android:maxLength="4"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -84,14 +86,16 @@
                 android:layout_height="45dp"
                 android:hint="请输入学科分数:"
                 android:layout_weight="1"
-                android:numeric="decimal"/>
+                android:numeric="decimal"
+                android:maxLength="4"/>
             <EditText
                 android:id="@+id/credit2"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:hint="请输入学科学分:"
                 android:layout_weight="1"
-                android:numeric="decimal"/>
+                android:numeric="decimal"
+                android:maxLength="4"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -117,14 +121,16 @@
                 android:layout_height="45dp"
                 android:hint="请输入学科分数:"
                 android:layout_weight="1"
-                android:numeric="decimal"/>
+                android:numeric="decimal"
+                android:maxLength="4"/>
             <EditText
                 android:id="@+id/credit3"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:hint="请输入学科学分:"
                 android:layout_weight="1"
-                android:numeric="decimal"/>
+                android:numeric="decimal"
+                android:maxLength="4"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -150,14 +156,16 @@
                 android:layout_height="45dp"
                 android:hint="请输入学科分数:"
                 android:layout_weight="1"
-                android:numeric="decimal"/>
+                android:numeric="decimal"
+                android:maxLength="4"/>
             <EditText
                 android:id="@+id/credit4"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:hint="请输入学科学分:"
                 android:layout_weight="1"
-                android:numeric="decimal"/>
+                android:numeric="decimal"
+                android:maxLength="4"/>
         </LinearLayout>
     </LinearLayout>
 <LinearLayout
